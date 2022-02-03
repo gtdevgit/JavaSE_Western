@@ -18,6 +18,11 @@ public class Dame extends Humain {
         this.etat = LIBRE;
     }
 
+
+    public String quelEstTonNom() {
+        return "Miss " + super.quelEstTonNom();
+    }
+
     /**
      * 
      */

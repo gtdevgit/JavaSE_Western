@@ -28,7 +28,7 @@ public class Humain {
         System.out.println("Ah ! Un bon verre de " + getBoissonFavorite() + " ! GLOUPS !");
     }
 
-    public String quelEstTonNom() {
+    protected String quelEstTonNom() {
         return this.nom;
     }
 

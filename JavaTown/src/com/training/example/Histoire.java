@@ -31,7 +31,10 @@ public class Histoire {
 
         dalton.kidnapper(daisy);
         luke.tirer(dalton);
+        dalton.emprisonner(luke);
         luke.liberer(daisy);
+
+
 
     }
 

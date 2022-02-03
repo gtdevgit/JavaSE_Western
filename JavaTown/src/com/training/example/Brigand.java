@@ -21,6 +21,10 @@ public class Brigand extends Humain {
         this.etat = LIBRE;
     }
 
+    public String quelEstTonNom() {
+        return super.quelEstTonNom() + " le " + this.look;
+    }
+
     /**
      * 
      */

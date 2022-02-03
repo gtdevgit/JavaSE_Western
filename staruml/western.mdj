@@ -1,7 +1,7 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Untitled",
+	"name": "Western",
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
@@ -9,7 +9,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "Model",
+			"name": "western.model",
 			"ownedElements": [
 				{
 					"_type": "UMLClassDiagram",
@@ -75,9 +75,9 @@
 											"font": "Arial;13;0",
 											"left": 50,
 											"top": -24,
-											"width": 73.67724609375,
+											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from western.model)"
 										},
 										{
 											"_type": "LabelView",
@@ -374,9 +374,9 @@
 											"font": "Arial;13;0",
 											"left": -530,
 											"top": -850,
-											"width": 73.67724609375,
+											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from western.model)"
 										},
 										{
 											"_type": "LabelView",
@@ -570,9 +570,9 @@
 											"font": "Arial;13;0",
 											"left": -586,
 											"top": -220,
-											"width": 73.67724609375,
+											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from western.model)"
 										},
 										{
 											"_type": "LabelView",
@@ -869,9 +869,9 @@
 											"font": "Arial;13;0",
 											"left": 114,
 											"top": -12,
-											"width": 73.67724609375,
+											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from western.model)"
 										},
 										{
 											"_type": "LabelView",
@@ -1147,9 +1147,9 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"width": 73.67724609375,
+											"width": 122.80810546875,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from western.model)"
 										},
 										{
 											"_type": "LabelView",

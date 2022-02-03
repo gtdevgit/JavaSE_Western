@@ -1309,13 +1309,30 @@
 											"height": 13,
 											"text": "+getCaracteristique(): String",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF+v+wukf3kfQQ=",
+											"_parent": {
+												"$ref": "AAAAAAF+v1PFXvz/Hs0="
+											},
+											"model": {
+												"$ref": "AAAAAAF+v+wuif3hx8U="
+											},
+											"font": "Arial;13;0",
+											"left": 622,
+											"top": 588,
+											"width": 196.8916015625,
+											"height": 13,
+											"text": "+tirer(brigan: Brigan)",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 617,
 									"top": 523,
 									"width": 206.8916015625,
-									"height": 68
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1351,7 +1368,7 @@
 							"left": 617,
 							"top": 460,
 							"width": 206.8916015625,
-							"height": 131,
+							"height": 146,
 							"nameCompartment": {
 								"$ref": "AAAAAAF+v1PFXvz5o9g="
 							},
@@ -1577,7 +1594,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 577,
+									"left": 574,
 									"top": 390,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -1598,7 +1615,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 566,
+									"left": 563,
 									"top": 400,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -1619,7 +1636,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 598,
+									"left": 595,
 									"top": 369,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -1638,7 +1655,7 @@
 								"$ref": "AAAAAAF+v1PFXvz4wuk="
 							},
 							"lineStyle": 1,
-							"points": "657:459;520:314",
+							"points": "652:459;518:314",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF+v1q39/2SRvA="
@@ -2120,6 +2137,25 @@
 									"name": "return",
 									"type": "String",
 									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF+v+wuif3hx8U=",
+							"_parent": {
+								"$ref": "AAAAAAF+v1Lpj/zopM0="
+							},
+							"name": "tirer",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAF+v+yGbP3oAsU=",
+									"_parent": {
+										"$ref": "AAAAAAF+v+wuif3hx8U="
+									},
+									"name": "brigan",
+									"type": "Brigan"
 								}
 							]
 						}

@@ -10,14 +10,31 @@ public class Cowboy extends Humain {
     /**
      * Default constructor
      */
-    public Cowboy() {
+    public Cowboy(String nom) {
+        super(nom);
+        this.popularite = 0;
+        caracteristique = "vaillant";
     }
 
+    private int popularite;
+
+    private String caracteristique;
     /**
      * @param dame
      */
-    public void Liberer(Dame dame) {
-        // TODO implement here
+    public void liberer(Dame dame) {
+        dame.Liberer(this);
     }
+
+    public void exclamer(){
+        System.out.println("Prends ça rascal ! ");
+    }
+
+    public void tirer(Brigand brigand){
+        System.out.println( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + brigand.quelEstTonNom() + ". PAN !");
+    }
+
+
+
 
 }

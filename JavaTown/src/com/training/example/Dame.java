@@ -7,10 +7,15 @@ import java.util.*;
  */
 public class Dame extends Humain {
 
+    public static final boolean LIBRE = true;
+    public static final boolean ENLEVE = false;
+
     /**
      * Default constructor
      */
-    public Dame() {
+    public Dame(String nom) {
+        super(nom);
+        this.etat = LIBRE;
     }
 
     /**
@@ -21,35 +26,37 @@ public class Dame extends Humain {
     /**
      * 
      */
-    public void couleurRobe;
+    public String couleurRobe;
 
     /**
      * 
      */
     public void Enlever() {
-        // TODO implement here
+        System.out.println("AU SECOUR !");
+        etat = ENLEVE;
     }
 
     /**
      * 
      */
-    public void Liberer() {
-        // TODO implement here
+    public void Liberer(Cowboy cowboy) {
+        etat = LIBRE;
+        System.out.println("Merci " + cowboy.quelEstTonNom() + ".");
     }
 
     /**
      * @return
      */
     public boolean getEtat() {
-        // TODO implement here
-        return false;
+        return this.etat;
     }
 
     /**
      * @param couleurRobe
      */
     public void changerRobe(String couleurRobe) {
-        // TODO implement here
+        System.out.println("Regardez ma nouvelle robe " + couleurRobe);
+        this.couleurRobe = couleurRobe;
     }
 
 }

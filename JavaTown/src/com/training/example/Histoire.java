@@ -19,7 +19,20 @@ public class Histoire {
      */
     public static void main(String[] args) {
         // TODO implement here
-        return null;
+        System.out.println("Il était une fois...");
+
+        Dame daisy = new Dame("Daisy");
+        Brigand dalton = new Brigand("Joe Dalton");
+        Cowboy luke = new Cowboy("Lucky Luke");
+
+        daisy.sePresenter();
+        dalton.sePresenter();
+        luke.sePresenter();
+
+        dalton.kidnapper(daisy);
+        luke.tirer(dalton);
+        luke.liberer(daisy);
+
     }
 
 }

@@ -7,21 +7,29 @@ import java.util.*;
  */
 public class Brigand extends Humain {
 
+    public static final boolean LIBRE = true;
+    public static final boolean EN_PRISON = false;
+
     /**
      * Default constructor
      */
-    public Brigand() {
+    public Brigand(String nom) {
+        super(nom);
+        this.look = "méchant";
+        this. nbDameEnlevees = 0;
+        this.recompense = 100;
+        this.etat = LIBRE;
     }
 
     /**
      * 
      */
-    public void look;
+    public String look ;
 
     /**
      * 
      */
-    public void nbDameEnlevees;
+    public int nbDameEnlevees;
 
     /**
      * 
@@ -31,20 +39,21 @@ public class Brigand extends Humain {
     /**
      * 
      */
-    public void etat;
+    public boolean etat;
 
     /**
      * @param dame
      */
     public void kidnapper(Dame dame) {
-        // TODO implement here
+        System.out.println("Ah ah ! " + dame.quelEstTonNom() + ", tu es mienne désormais.");
+        dame.Enlever();
     }
 
     /**
      * 
      */
-    public void emprisonner() {
-        // TODO implement here
+    public void emprisonner(Cowboy cowboy) {
+        System.out.println("Dammed, je suis fait ! " + cowboy.quelEstTonNom() + ", tu m'as eu !" );
     }
 
     /**

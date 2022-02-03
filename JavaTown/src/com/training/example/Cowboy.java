@@ -42,5 +42,4 @@ public class Cowboy extends Humain {
 
 
 
-
 }

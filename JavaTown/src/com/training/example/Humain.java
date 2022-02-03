@@ -20,9 +20,7 @@ public class Humain {
         return this.boissonFavorite;
     }
 
-    public void parler(String texte){
-        System.out.println("(" + nom + ") - << " + texte + " >>" );
-    }
+
 
     public void sePresenter() {
         parler("Bonjour, je suis " + quelEstTonNom() + ". Ma boisson favorite est le " + getBoissonFavorite() + ".");
@@ -36,4 +34,8 @@ public class Humain {
         return this.nom;
     }
 
+    //public abstract void parler(String texte);
+    public void parler(String texte){
+        System.out.println("(" + quelEstTonNom() + ") - << " + texte + " >>" );
+    }
 }

@@ -37,6 +37,10 @@ public class Histoire {
         dalton.emprisonner(luke);
         luke.liberer(daisy);
 
+        Barman john = new Barman("John");
+        john.servir(luke);
+        john.servir(dalton);
+
 
 
     }

@@ -29,6 +29,9 @@ public class Histoire {
         dalton.sePresenter();
         luke.sePresenter();
 
+        System.out.println("");
+        System.out.println("ACTE I");
+        System.out.println("");
         dalton.kidnapper(daisy);
         luke.tirer(dalton);
         dalton.emprisonner(luke);

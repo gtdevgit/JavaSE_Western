@@ -14,21 +14,25 @@ public class Humain {
 
     private String nom;
 
-    private String boissonFavorite;
+    protected String boissonFavorite;
 
     public String getBoissonFavorite() {
         return this.boissonFavorite;
     }
 
+    public void parler(String texte){
+        System.out.println("(" + nom + ") - << " + texte + " >>" );
+    }
+
     public void sePresenter() {
-        System.out.println("Bonjour, je suis " + quelEstTonNom() + ". Ma boisson favorite est " + getBoissonFavorite() + ".");// TODO implement here
+        parler("Bonjour, je suis " + quelEstTonNom() + ". Ma boisson favorite est le " + getBoissonFavorite() + ".");
     }
 
     public void boire() {
-        System.out.println("Ah ! Un bon verre de " + getBoissonFavorite() + " ! GLOUPS !");
+        parler("Ah ! Un bon verre de " + getBoissonFavorite() + " ! GLOUPS !");
     }
 
-    protected String quelEstTonNom() {
+    public String quelEstTonNom() {
         return this.nom;
     }
 

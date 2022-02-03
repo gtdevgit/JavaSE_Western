@@ -16,6 +16,8 @@ public class Dame extends Humain {
     public Dame(String nom) {
         super(nom);
         this.etat = LIBRE;
+        this.couleurRobe = "blanche";
+        this.boissonFavorite = "lait";
     }
 
 
@@ -23,6 +25,10 @@ public class Dame extends Humain {
         return "Miss " + super.quelEstTonNom();
     }
 
+    public void sePresenter() {
+        super.sePresenter();
+        parler("J'ai une robe " + couleurRobe + ".");
+    }
     /**
      * 
      */
@@ -37,7 +43,7 @@ public class Dame extends Humain {
      * 
      */
     public void Enlever() {
-        System.out.println("AU SECOUR !");
+        parler("AU SECOUR !");
         etat = ENLEVE;
     }
 
@@ -46,7 +52,7 @@ public class Dame extends Humain {
      */
     public void Liberer(Cowboy cowboy) {
         etat = LIBRE;
-        System.out.println("Merci " + cowboy.quelEstTonNom() + ".");
+        parler("Merci " + cowboy.quelEstTonNom() + ".");
     }
 
     /**
@@ -60,7 +66,7 @@ public class Dame extends Humain {
      * @param couleurRobe
      */
     public void changerRobe(String couleurRobe) {
-        System.out.println("Regardez ma nouvelle robe " + couleurRobe);
+        parler("Regardez ma nouvelle robe " + couleurRobe);
         this.couleurRobe = couleurRobe;
     }
 

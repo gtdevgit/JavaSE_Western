@@ -13,7 +13,13 @@ public class Cowboy extends Humain {
     public Cowboy(String nom) {
         super(nom);
         this.popularite = 0;
-        caracteristique = "vaillant";
+        this.caracteristique = "vaillant";
+        this.boissonFavorite = "whisky";
+    }
+
+    public void sePresenter() {
+        super.sePresenter();
+        parler("Je suis " + caracteristique + " J' ai une popularite de " + popularite + ".");
     }
 
     private int popularite;
@@ -27,11 +33,11 @@ public class Cowboy extends Humain {
     }
 
     public void exclamer(){
-        System.out.println("Prends ça rascal ! ");
+        parler("Prends ça rascal ! ");
     }
 
     public void tirer(Brigand brigand){
-        System.out.println( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + brigand.quelEstTonNom() + ". PAN !");
+        parler( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + brigand.quelEstTonNom() + ". PAN !");
     }
 
 

@@ -19,10 +19,16 @@ public class Brigand extends Humain {
         this. nbDameEnlevees = 0;
         this.recompense = 100;
         this.etat = LIBRE;
+        this.boissonFavorite = "tord-boyaux";
     }
 
     public String quelEstTonNom() {
-        return super.quelEstTonNom() + " le " + this.look;
+        return super.quelEstTonNom() + " le " + this.look + ".";
+    }
+
+    public void sePresenter() {
+        super.sePresenter();
+        parler("J'ai enlevé " + nbDameEnlevees + " dame(s). La récompense pour ma capture est de " + recompense + "$.");
     }
 
     /**
@@ -49,7 +55,7 @@ public class Brigand extends Humain {
      * @param dame
      */
     public void kidnapper(Dame dame) {
-        System.out.println("Ah ah ! " + dame.quelEstTonNom() + ", tu es mienne désormais.");
+        parler("Ah ah ! " + dame.quelEstTonNom() + ", tu es mienne désormais.");
         dame.Enlever();
     }
 
@@ -57,7 +63,7 @@ public class Brigand extends Humain {
      * 
      */
     public void emprisonner(Cowboy cowboy) {
-        System.out.println("Dammed, je suis fait ! " + cowboy.quelEstTonNom() + ", tu m'as eu !" );
+        parler("Dammed, je suis fait ! " + cowboy.quelEstTonNom() + ", tu m'as eu !" );
     }
 
     /**
@@ -65,7 +71,7 @@ public class Brigand extends Humain {
      */
     public int getRecompense() {
         // TODO implement here
-        return 0;
+        return recompense;
     }
 
 }

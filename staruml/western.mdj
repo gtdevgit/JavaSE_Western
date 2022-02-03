@@ -630,7 +630,7 @@
 											"top": 438,
 											"width": 178.8388671875,
 											"height": 13,
-											"text": "+look",
+											"text": "+look: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -647,7 +647,7 @@
 											"top": 453,
 											"width": 178.8388671875,
 											"height": 13,
-											"text": "+nbDameEnlevees",
+											"text": "+nbDameEnlevees: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -681,7 +681,7 @@
 											"top": 483,
 											"width": 178.8388671875,
 											"height": 13,
-											"text": "+etat",
+											"text": "+etat: boolean",
 											"horizontalAlignment": 0
 										}
 									],
@@ -946,7 +946,7 @@
 											"top": 477,
 											"width": 209.2060546875,
 											"height": 13,
-											"text": "+couleurRobe",
+											"text": "+couleurRobe: String",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1846,7 +1846,7 @@
 								"$ref": "AAAAAAF+v06Ndvxd4pY="
 							},
 							"name": "look",
-							"type": ""
+							"type": "String"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1855,7 +1855,7 @@
 								"$ref": "AAAAAAF+v06Ndvxd4pY="
 							},
 							"name": "nbDameEnlevees",
-							"type": ""
+							"type": "int"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1874,7 +1874,7 @@
 								"$ref": "AAAAAAF+v06Ndvxd4pY="
 							},
 							"name": "etat",
-							"type": ""
+							"type": "boolean"
 						}
 					],
 					"operations": [
@@ -1967,7 +1967,7 @@
 								"$ref": "AAAAAAF+v0/SS/yUz50="
 							},
 							"name": "couleurRobe",
-							"type": ""
+							"type": "String"
 						}
 					],
 					"operations": [

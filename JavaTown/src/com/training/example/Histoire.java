@@ -92,17 +92,17 @@ public class Histoire {
         anabelle.emprisonne(bill);
         anabelle.changerRobe("orange");
 
-/*        System.out.println("");
-        System.out.println("*** THE END *** ");
         System.out.println("");
-        System.out.println("Par ordre d'apparition");
+        System.out.println("ACTE V - Les indiens");
         System.out.println("");
 
-        daisy.sePresenter();
-        dalton.sePresenter();
-        luke.sePresenter();
-        lola.sePresenter();
-        chapo.sePresenter();
-        bill.sePresenter();*/
+        Indien chevalFougeu = new Indien("chevalFougeu");
+        chevalFougeu.scalper(lola);
+        chevalFougeu.scalper(bill);
+
+        System.out.println("");
+        System.out.println("*** THE END *** ");
+        System.out.println("");
+
     }
 }

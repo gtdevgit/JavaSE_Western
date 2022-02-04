@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class Brigand extends Humain implements HorsLaloi {
+public class Brigand extends Humain implements HorsLaloi, VisagePale {
 
     public static final boolean LIBRE = true;
     public static final boolean EN_PRISON = false;
@@ -67,5 +67,10 @@ public class Brigand extends Humain implements HorsLaloi {
     @Override
     public String quelEstTonNom() {
         return super.quelEstTonNom() + " le " + this.look + ".";
+    }
+
+    @Override
+    public void scalp() {
+        parler("Aïe ma tête !");
     }
 }

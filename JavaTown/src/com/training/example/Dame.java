@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class Dame extends Humain {
+public class Dame extends Humain implements VisagePale {
 
     public static final boolean LIBRE = true;
     public static final boolean ENLEVE = false;
@@ -70,4 +70,8 @@ public class Dame extends Humain {
         this.couleurRobe = couleurRobe;
     }
 
+    @Override
+    public void scalp() {
+        parler("Aïe ma tête !");
+    }
 }

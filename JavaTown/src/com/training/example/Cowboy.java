@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class Cowboy extends Humain {
+public class Cowboy extends Humain implements VisagePale {
 
     /**
      * Default constructor
@@ -40,6 +40,8 @@ public class Cowboy extends Humain {
         parler( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + horsLaloi.quelEstTonNom() + ". PAN !");
     }
 
-
-
+    @Override
+    public void scalp() {
+        parler("Aïe ma tête !");
+    }
 }

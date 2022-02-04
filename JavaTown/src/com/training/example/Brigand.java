@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 
  */
-public class Brigand extends Humain {
+public class Brigand extends Humain implements HorsLaloi {
 
     public static final boolean LIBRE = true;
     public static final boolean EN_PRISON = false;
@@ -20,10 +20,6 @@ public class Brigand extends Humain {
         this.recompense = 100;
         this.etat = LIBRE;
         this.boissonFavorite = "tord-boyaux";
-    }
-
-    public String quelEstTonNom() {
-        return super.quelEstTonNom() + " le " + this.look + ".";
     }
 
     public void sePresenter() {
@@ -51,28 +47,25 @@ public class Brigand extends Humain {
      */
     public boolean etat;
 
-    /**
-     * @param dame
-     */
-    public void kidnapper(Dame dame) {
+    @Override
+    public void emprisonne(Cowboy c) {
+        parler("Dammed, je suis fait ! " + c.quelEstTonNom() + ", tu m'as eu !" );
+    }
+
+    @Override
+    public void kidnappe(Dame dame) {
         parler("Ah ah ! " + dame.quelEstTonNom() + ", tu es mienne désormais.");
         dame.Enlever();
         nbDameEnlevees++;
     }
 
-    /**
-     * 
-     */
-    public void emprisonner(Cowboy cowboy) {
-        parler("Dammed, je suis fait ! " + cowboy.quelEstTonNom() + ", tu m'as eu !" );
-    }
-
-    /**
-     * @return
-     */
-    public int getRecompense() {
-        // TODO implement here
+    @Override
+    public int getMiseAPrix() {
         return recompense;
     }
 
+    @Override
+    public String quelEstTonNom() {
+        return super.quelEstTonNom() + " le " + this.look + ".";
+    }
 }

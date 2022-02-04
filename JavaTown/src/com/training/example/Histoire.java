@@ -33,9 +33,9 @@ public class Histoire {
         dalton.sePresenter();
         luke.sePresenter();
 
-        dalton.kidnapper(daisy);
+        dalton.kidnappe(daisy);
         luke.tirer(dalton);
-        dalton.emprisonner(luke);
+        dalton.emprisonne(luke);
         luke.liberer(daisy);
 
         Barman john = new Barman("John");
@@ -56,11 +56,11 @@ public class Histoire {
         bill.sePresenter();
 
         lola.changerRobe("bleu");
-        chapo.kidnapper(lola);
+        chapo.kidnappe(lola);
         bill.chercher(chapo);
         bill.tirer(chapo);
         bill.coffrer(chapo);
-        chapo.emprisonner(bill);
+        chapo.emprisonne(bill);
         bill.liberer(lola);
 
         System.out.println("");

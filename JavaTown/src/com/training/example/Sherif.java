@@ -23,6 +23,6 @@ public class Sherif extends Cowboy{
 
     public void chercher(Brigand brigand){
         System.out.println("Le sherif recherche " + brigand.quelEstTonNom() + ".");
-        parler("OYEZ OYEZ BRAVE GENS !! " + brigand.getRecompense() + "$ a qui arrétera " + brigand.quelEstTonNom() + ", mort ou vif !!");
+        parler("OYEZ OYEZ BRAVE GENS !! " + brigand.getMiseAPrix() + "$ a qui arrétera " + brigand.quelEstTonNom() + ", mort ou vif !!");
     }
 }

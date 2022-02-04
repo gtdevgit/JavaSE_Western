@@ -36,8 +36,8 @@ public class Cowboy extends Humain {
         parler("Prends ça rascal ! ");
     }
 
-    public void tirer(Brigand brigand){
-        parler( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + brigand.quelEstTonNom() + ". PAN !");
+    public void tirer(HorsLaloi horsLaloi){
+        parler( "Le " + caracteristique + " " + quelEstTonNom() + " tire sur " + horsLaloi.quelEstTonNom() + ". PAN !");
     }
 
 

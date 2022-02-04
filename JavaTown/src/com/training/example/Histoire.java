@@ -19,6 +19,10 @@ public class Histoire {
      */
     public static void main(String[] args) {
         // TODO implement here
+        System.out.println("");
+        System.out.println("ACTE I");
+        System.out.println("");
+
         System.out.println("Il était une fois...");
 
         Dame daisy = new Dame("Daisy");
@@ -29,9 +33,6 @@ public class Histoire {
         dalton.sePresenter();
         luke.sePresenter();
 
-        System.out.println("");
-        System.out.println("ACTE I");
-        System.out.println("");
         dalton.kidnapper(daisy);
         luke.tirer(dalton);
         dalton.emprisonner(luke);
@@ -41,8 +42,39 @@ public class Histoire {
         john.servir(luke);
         john.servir(dalton);
 
+        System.out.println("");
+        System.out.println("ACTE II");
+        System.out.println("");
 
+        System.out.println("Il était une deuxième fois...");
 
+        Dame lola = new Dame("Lola");
+        Brigand chapo = new Brigand("Chapo");
+        Sherif bill = new Sherif("Wild Bill Hickock");
+        lola.sePresenter();
+        chapo.sePresenter();
+        bill.sePresenter();
+
+        lola.changerRobe("bleu");
+        chapo.kidnapper(lola);
+        bill.chercher(chapo);
+        bill.tirer(chapo);
+        bill.coffrer(chapo);
+        chapo.emprisonner(bill);
+        bill.liberer(lola);
+
+        System.out.println("");
+        System.out.println("*** THE END *** ");
+        System.out.println("");
+        System.out.println("Par ordre d'apparition");
+        System.out.println("");
+
+        daisy.sePresenter();
+        dalton.sePresenter();
+        luke.sePresenter();
+        lola.sePresenter();
+        chapo.sePresenter();
+        bill.sePresenter();
     }
 
 }

@@ -57,6 +57,7 @@ public class Brigand extends Humain {
     public void kidnapper(Dame dame) {
         parler("Ah ah ! " + dame.quelEstTonNom() + ", tu es mienne désormais.");
         dame.Enlever();
+        nbDameEnlevees++;
     }
 
     /**

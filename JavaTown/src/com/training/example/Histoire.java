@@ -64,6 +64,22 @@ public class Histoire {
         bill.liberer(lola);
 
         System.out.println("");
+        System.out.println("ACTE III - Les Ripoux");
+        System.out.println("");
+
+        System.out.println("Il était encore une fois...");
+
+        Ripoux rene = new Ripoux("René Boisrond");
+        Dame simone = new Dame("Simone");
+        Sherif lesbuche = new Sherif("Lesbuche");
+
+        lesbuche.tirer(rene);
+        lesbuche.coffrer(rene);
+        rene.emprisonne(lesbuche);
+
+        lesbuche.liberer(simone);
+
+/*        System.out.println("");
         System.out.println("*** THE END *** ");
         System.out.println("");
         System.out.println("Par ordre d'apparition");
@@ -74,7 +90,6 @@ public class Histoire {
         luke.sePresenter();
         lola.sePresenter();
         chapo.sePresenter();
-        bill.sePresenter();
+        bill.sePresenter();*/
     }
-
 }

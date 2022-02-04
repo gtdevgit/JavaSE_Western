@@ -16,13 +16,13 @@ public class Sherif extends Cowboy{
         return "Shérif * " + super.quelEstTonNom();
     }
 
-    public void coffrer(Brigand brigand){
-        parler("Au nom de la loi, je vous arrête " + brigand.quelEstTonNom() + " !");
+    public void coffrer(HorsLaloi horsLaLoi){
+        parler("Au nom de la loi, je vous arrête " + horsLaLoi.quelEstTonNom() + " !");
         nbBrigandCoffre++;
     }
 
-    public void chercher(Brigand brigand){
-        System.out.println("Le sherif recherche " + brigand.quelEstTonNom() + ".");
-        parler("OYEZ OYEZ BRAVE GENS !! " + brigand.getMiseAPrix() + "$ a qui arrétera " + brigand.quelEstTonNom() + ", mort ou vif !!");
+    public void chercher(HorsLaloi horsLaLoi){
+        System.out.println("Le sherif recherche " + horsLaLoi.quelEstTonNom() + ".");
+        parler("OYEZ OYEZ BRAVE GENS !! " + horsLaLoi.getMiseAPrix() + "$ a qui arrétera " + horsLaLoi.quelEstTonNom() + ", mort ou vif !!");
     }
 }

@@ -79,6 +79,19 @@ public class Histoire {
 
         lesbuche.liberer(simone);
 
+        System.out.println("");
+        System.out.println("ACTE IV");
+        System.out.println("");
+
+        FemmeBrigand anabelle = new FemmeBrigand("Anabelle");
+        anabelle.sePresenter();
+        anabelle.changerRobe("rose");
+        anabelle.kidnappe(lola);
+        bill.liberer(lola);
+        bill.coffrer(anabelle);
+        anabelle.emprisonne(bill);
+        anabelle.changerRobe("orange");
+
 /*        System.out.println("");
         System.out.println("*** THE END *** ");
         System.out.println("");
